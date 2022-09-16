@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
+ol {
+    list-style-type: none;
+}
+ul{
+    list-style: none;
+}
+
+
+/*estlos del banner*/
+.banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    height: 30px;
+    width: 100%;
+}
+
+.banner-text{
+    color: rgb(255, 255, 255);
+}
+
+/*---------------*/
+
+.header-container{
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    position: -webkit-sticky; /* para navegador Safari*/
+    top: 0px;
+}
+
+
+/*Logo*/
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 180px;
+    height: 80px;
+}
+
+/* nav */
+.nav-container{
+    width: 50%;
+    margin: 0px auto;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+/* formato de hover */
+nav ul a{
+    color: rgb(104, 104, 104);
+    font-size: 18px;
+    transition: color .3s;
+}
+
+nav ul a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+/* barra divisoria */
+
+hr{
+    border-top: 1px solid rgb(43, 43, 43);
+    border-radius: 1px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+/* main */
+
+.main-container{
+    width: 80%;
+   margin: 0px auto;
+   display: block;
+
+}
+
+.main-container div{
+    margin-bottom: 50px;
+}
+
+.main-container img{
+    display: block;
+    margin: 0px auto;
+    height: 500px;
+}
+
+.main-indextext{
+    text-align: center;
+    font-size: 28px;
+}
+
+/* carrousel en index */
+
+#index-carrousel{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#index-carrousel img{
+    width: auto;
+    height: 200px;
+    margin: 10px
+}
+.wpp{
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+}
+.wpp img{
+    height: 50px;
+}
+
+/* -------------- */
+
+/* footer enlaces */
+
+.footer-container{
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.footer-container section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-container li{
+    margin: 20px;
+}
+
+.footer-container a{
+    color: rgb(187, 187, 187);
+}
+
+/* formato hover enlaces */
+
+footer a{
+    font-size: 18px;
+    transition: color .3s;
+}
+
+footer a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+
+}
+
+
+.footer-container h2{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+
+.footer-logo img{
+    position: relative;
+    height: 120px;
+    top: 30px;
+}
+
+/* redes */
+
+.social-container ul{
+    display: flex;
+    justify-content: left;
+    justify-content: space-between 10px;
+}
+
+.social-container img{
+    height: 35px;
+}
+
+
+
+/* -----------------CONTACTO-------------------- */
+
+#section-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 30px solid rgb(104, 104, 104);
+    border-right: 30px solid rgb(104, 104, 104);
+    padding: 10px
+}
+
+/* inputs style */
+
+input[type=submit] {
+    width: 150px;  height: 40px;
+}
+
+#submit{
+    display: flex;
+    justify-content: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+    width: 300px; height: 40px;
+    font-size: 16px;
+}
+
+/* input textarea */
+textarea{
+    resize: none;
+    width: 300px;
+    font-size: 16px;
+}
+
+/* input number */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+/* ----------------- SOBRE NOSOTROS------------------- */
+
+#aboutus-main-container{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+}
+
+.youtube{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+#aboutus-content{
+    display: inline-flex;
+    width: 100%;
+    height: 550px;
+    font-size: 28px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus-img img{
+    width: auto;
+    height: 550px;
+    margin-left: 30px;
+    
+}
+
+
+/* --------------- PRODUCTOS ------------------ */
+
+#product-main-container{
+    width: 80%;
+    margin: auto;
+}
+
+.filters{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+#products{
+    display: inline-flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+    
+}
+
+.product{
+    transition: 0.3s ease; 
+}
+
+
+.product:hover{
+ transform: scale(1.1)
+}
+
+
+.product img{
+    width: auto;
+    height: 200px;
+}
+
+.product h3{
+    color: black;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.product h4{
+    color: black;
+}
+
+
+/* ----------- PRODUCTO SELECCIONADO ---------- */
+
+
+#product-buypage{
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+}
+
+#product-selected{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.shoe-selected > img{
+    height: 500px;
+    border: solid black 2px;
+    margin-right: 50px;
+}
+
+#shoe-specs{
+    display: flex;
+    flex-direction: column;
+}
+#shoe-specs h4{
+    font-weight: 300;
+}
+
+#shoe-specs h2{
+    font-weight: 400;
+}
+
+.shoe-models{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.shoe-models img{
+    height: 50px;
+}
+
+.buy-buttons{
+    margin-top: 15px;
+}
