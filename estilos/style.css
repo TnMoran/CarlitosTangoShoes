@@ -270,7 +270,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #product-main-container{
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .filters{
@@ -280,30 +280,34 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 50px;
 }
 
-#products{
-    display: inline-flex;
-    justify-content: space-evenly;
-
-    width: 100%;
-    
-}
-
-.product{
-    transition: 0.3s ease; 
+#products-container{
+    display: grid;
+    border: solid 4px coral;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 20px;
+    padding-left: 14px;
 }
 
 
-.product:hover{
- transform: scale(1.1)
+.product-item{
+    text-align: left;
+    transition: 0.3s ease;
 }
 
-
-.product img{
+.product-item img{
     width: auto;
-    height: 200px;
+    height: 300px;
 }
 
-.product h3{
+.product-item:hover{
+ transform: scale(1.05)
+}
+
+
+
+
+.product-item h3{
     color: black;
     font-weight: 300;
     font-size: 16px;
