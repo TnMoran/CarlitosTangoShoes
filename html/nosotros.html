@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="shortcut icon" href="../imagenes/icon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,12 +16,11 @@
 </head>
 
 <body>
-
     <!-- Header -->
-
     <header class="header-container">
 
         <!--banner-->
+
         <div class="banner-container">
             <p class="banner-text">
                 Zapatos 100% artesanales de cuero genuino - Hecho en Argentina
@@ -28,42 +29,65 @@
         <!---->
 
         <!--parte superior nav+logo-->
-        <div class="header-container">
+        <div>
             <div class="logo">
-                <a href="index.html"><img src="../imagenes/logo (1).png" alt="logo"></a>
+                <a href="../index.html"><img src="../imagenes/logo (1).png" alt="logo"></a>
             </div>
-            <div class="nav-container">
-                <nav class="nav">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="oferta.html">Oferta</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-collapse">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="oferta.html">Oferta</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <hr>
         </div>
         <!---->
     </header>
 
-    <!-- Mains -->
+    <!-- Main -->
+    <main class="main-container">
+        <div class="container-fluid text-center d-flex justify-content-center" id="aboutus-video">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/3ZGyO-hIqoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-    <main id="aboutus-mains-container">
-        <div class="youtube">
-            <iframe width="1400" height="720" src="https://www.youtube.com/embed/3ZGyO-hIqoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div id="aboutus-content">
-            <p>
-                Somos una marca nacida de la pasión por el<br>baile y la vestimenta.<br>Un obstáculo siempre fue no conseguir variedad<br> de modelos en el mercado, así que<br>¡hicimos nuestros propios zapatos a partir del<br> 2020!<br><br>Con mucho esfuerzo diario y amor por el oficio<br>hemos logrado consolidar una marca y calidad<br>en nuestros productos.<br><br><strong>El baile une a dos personas, y los zapatos lo<br>reflejan.</strong>
-            </p>
-            <div class="aboutus-img">
-                <img src="../imagenes/piernaszapatos.jpg" alt="piernaszapatos">
+        <div class="container-fluid row justify-content-center">
+            <div class="col-sm-4 text-center text">
+                <h4 class="text-black">Somos una marca nacida de la pasión por el
+                    baile y la vestimenta.<br>
+                    Un obstáculo siempre fue no conseguir variedad
+                    de modelos en el mercado<br>
+                    Así que
+                    ¡hicimos nuestros propios zapatos a partir del
+                    2020!<br>
+                    Con mucho esfuerzo diario y amor por el oficio
+                    hemos logrado consolidar una marca y calidad
+                    en nuestros productos.<br>
+                    El baile une a dos personas, y los zapatos lo
+                    reflejan.</h4>
             </div>
+            <img class="img-thumbnail col-sm-4" src="../imagenes/piernaszapatos.jpg" alt="piernaszapatos">
         </div>
-        
+
+
+
+
+
+
     </main>
+
     <div class="wpp">
         <a href="https://api.whatsapp.com/send?phone=5493416194163&app=facebook&entry_point=page_cta&fbclid=IwAR1iSNtLYZ0gcGeT__yutaT1rsXHTnmc6dxT_bQS-C5hKqjae4Qisc6RrWA"
             target="_blank"><img src="../imagenes/wpp.png" alt="whatsapp">
@@ -73,9 +97,31 @@
     <!-- Footer -->
 
     <footer class="footer-container">
-        <section>
+        <div id="logo-links" class="footer-logo">
+            <img class="container-fluid justify-content-center" src="../imagenes/logo blanco.png"
+                alt="carlitos tangos shoes">
             <div>
-                <h2>Enlaces Rápidos</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/carlitostangoshoes/" target="_blank"><img
+                                src="../imagenes/instagram.png" alt=""></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/Carlitos-Tango-Shoes-128826157131559/" target="_blank"><img
+                                src="../imagenes/facebook.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="http://m.me/128826157131559?ref=INTENCION" target="_blank"><img
+                                src="../imagenes/messenger.png" alt="messenger"></a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5493416194163&app=facebook&entry_point=page_cta&fbclid=IwAR1iSNtLYZ0gcGeT__yutaT1rsXHTnmc6dxT_bQS-C5hKqjae4Qisc6RrWA"
+                            target="_blank"><img src="../imagenes/wpp.png" alt="whatsapp"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="footer-shortcuts">
+            <div>
+                <h4>Enlaces Rápidos</h4>
                 <ul>
                     <li><a href="nosotros.html">Quienes somos</a></li>
                     <li><a href="politics.html">Politica de privacidad</a></li>
@@ -85,7 +131,7 @@
             </div>
 
             <div>
-                <h2>Políticas</h2>
+                <h4>Políticas</h4>
                 <ul>
                     <li><a href="infoenvios.html">Envios</a></li>
                     <li><a href="infoentrega.html">Tiempo de entrega</a></li>
@@ -94,25 +140,15 @@
                 </ul>
             </div>
         </section>
-        <div class="footer-logo">
-            <img src="../imagenes/logo blanco.png" alt="carlitos tangos shoes">
-        </div>
-        <div class="social-container">
-            <ul>
-                <li><a href="https://www.instagram.com/carlitostangoshoes/" target="_blank"><img
-                            src="../imagenes/instagram.png" alt=""></a></li>
-                <li><a href="https://www.facebook.com/Carlitos-Tango-Shoes-128826157131559/" target="_blank"><img
-                            src="../imagenes/facebook.png" alt=""></a></li>
-                <li>
-                    <a href="http://m.me/128826157131559?ref=INTENCION" target="_blank"><img
-                            src="../imagenes/messenger.png" alt="messenger"></a>
-                </li>
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=5493416194163&app=facebook&entry_point=page_cta&fbclid=IwAR1iSNtLYZ0gcGeT__yutaT1rsXHTnmc6dxT_bQS-C5hKqjae4Qisc6RrWA" target="_blank"><img src="../imagenes/wpp.png" alt="whatsapp"></a>
-                </li>
-            </ul>
-        </div>
+
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
