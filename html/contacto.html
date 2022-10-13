@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="imagenes/icon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../imagenes/icon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
     <header class="header-container">
 
         <!--banner-->
-        
+
         <div class="banner-container">
             <p class="banner-text">
                 Zapatos 100% artesanales de cuero genuino - Hecho en Argentina
@@ -28,71 +29,97 @@
         <!---->
 
         <!--parte superior nav+logo-->
-        <div>
-            <div class="logo">
-                <a href="../index.html"><img src="../imagenes/logo (1).png" alt="logo"></a>
-            </div>
-            <div class="">
-                <nav class="navbar navbar-expand navbar-light bg-light navbar-collapse justify-content-around">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="navbar-brand" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="navbar-brand" href="productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="navbar-brand" href="nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="navbar-brand" href="contacto.html">Contacto</a></li>
-                        <li class="nav-item"><a class="navbar-brand" href="oferta.html">Oferta</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <hr>
+        <div class="logo">
+            <a href="../index.html"><img src="../imagenes/logo (1).png" alt="logo"></a>
         </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="../index.html">Inicio<span
+                                    class="sr-only">
+                                </span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="oferta.html">Oferta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr>
         <!---->
     </header>
 
 
     <!-- Main  -->
 
-    <main class="main-container">
-        <section id="section-container">
-            <div>
-                <img src="../imagenes/pose.jpg" alt="pose">
-            </div>
-            <div>
-                <ul>
-                    <li><input type="text" placeholder="Nombre" name="post" required=""></li>
-                    <li><input type="text" name="post" placeholder="Apellido" required=""></li>
-                    <li><input type="email" name="post" placeholder="Correo" required=""></li>
-                    <li><input type="number" name="post" placeholder="Teléfono (anteponiendo código de área sin 0)"
-                            min="0" required=""></li>
-                    <li><textarea name="post" cols="50" rows="10" placeholder="Escriba su consulta aquí"></textarea>
-                    </li>
-                    <div id="submit">
-                        <li><input type="submit" value="Enviar" name="post"></li>
-                    </div>
-                </ul>
-            </div>
-            <div>
-                
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107126.67506297378!2d-60.76307944179687!3d-32.95870219999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1662486069094!5m2!1ses!2sar"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-                
+    <main>
+        <section class="container mb-4">
+            <div class="row justify-content-around" id="gallery">
+                <div class="col-sm-4 text-center">
+                    <img class="img-fluid" src="../imagenes/pose.jpg" alt="pose">
+                </div>
+                <div class="col-sm-4 text-center m-auto">
+                    <ul class="p-0">
+                        <li><input type="text" placeholder="Nombre" name="post" required=""></li>
+                        <li><input type="text" name="post" placeholder="Apellido" required=""></li>
+                        <li><input type="email" name="post" placeholder="Correo" required=""></li>
+                        <li><input type="number" name="post" placeholder="Teléfono (anteponiendo código de área sin 0)"
+                                min="0" required=""></li>
+                        <li><textarea name="post" cols="50" rows="10" placeholder="Escriba su consulta aquí"></textarea>
+                        </li>
+                        <div id="submit">
+                            <li><input type="submit" value="Enviar" name="post"></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 text-center p-0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107126.67506297378!2d-60.76307944179687!3d-32.95870219999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1662486069094!5m2!1ses!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
         </section>
     </main>
-    <div class="wpp">
-        <a href="https://api.whatsapp.com/send?phone=5493416194163&app=facebook&entry_point=page_cta&fbclid=IwAR1iSNtLYZ0gcGeT__yutaT1rsXHTnmc6dxT_bQS-C5hKqjae4Qisc6RrWA"
-            target="_blank"><img src="../imagenes/wpp.png" alt="whatsapp">
-        </a>
-    </div>
 
     <!-- Footer -->
 
     <footer class="footer-container">
-        <section>
+        <div id="logo-links" class="footer-logo">
+            <img class="container-fluid justify-content-center" src="../imagenes/logo blanco.png"
+                alt="carlitos tangos shoes">
             <div>
-                <h2>Enlaces Rápidos</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/carlitostangoshoes/" target="_blank"><img
+                                src="../imagenes/instagram.png" alt=""></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/Carlitos-Tango-Shoes-128826157131559/" target="_blank"><img
+                                src="../imagenes/facebook.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="http://m.me/128826157131559?ref=INTENCION" target="_blank"><img
+                                src="../imagenes/messenger.png" alt="messenger"></a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5493416194163&app=facebook&entry_point=page_cta&fbclid=IwAR1iSNtLYZ0gcGeT__yutaT1rsXHTnmc6dxT_bQS-C5hKqjae4Qisc6RrWA"
+                            target="_blank"><img src="../imagenes/wpp.png" alt="whatsapp"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="footer-shortcuts">
+            <div>
+                <h4>Enlaces Rápidos</h4>
                 <ul>
                     <li><a href="nosotros.html">Quienes somos</a></li>
                     <li><a href="politics.html">Politica de privacidad</a></li>
@@ -102,7 +129,7 @@
             </div>
 
             <div>
-                <h2>Políticas</h2>
+                <h4>Políticas</h4>
                 <ul>
                     <li><a href="infoenvios.html">Envios</a></li>
                     <li><a href="infoentrega.html">Tiempo de entrega</a></li>
@@ -111,26 +138,12 @@
                 </ul>
             </div>
         </section>
-        <div class="footer-logo">
-            <img src="../imagenes/logo blanco.png" alt="carlitos tangos shoes">
-        </div>
-        <div class="social-container">
-            <ul>
-                <li><a href="https://www.instagram.com/carlitostangoshoes/" target="_blank"><img
-                            src="../imagenes/instagram.png" alt=""></a></li>
-                <li><a href="https://www.facebook.com/Carlitos-Tango-Shoes-128826157131559/" target="_blank"><img
-                            src="../imagenes/facebook.png" alt=""></a></li>
-                <li>
-                    <a href="http://m.me/128826157131559?ref=INTENCION" target="_blank"><img
-                            src="../imagenes/messenger.png" alt="messenger"></a>
-                </li>
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=5493416194163&app=facebook&entry_point=page_cta&fbclid=IwAR1iSNtLYZ0gcGeT__yutaT1rsXHTnmc6dxT_bQS-C5hKqjae4Qisc6RrWA"
-                        target="_blank"><img src="../imagenes/wpp.png" alt="whatsapp"></a>
-                </li>
-            </ul>
-        </div>
+
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

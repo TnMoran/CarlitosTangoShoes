@@ -120,6 +120,7 @@ hr{
     display: flex;
     background-color: rgb(0, 0, 0);
     width: 100%;
+    margin-top: 110px;
 }
 
     .footer-container a{
@@ -173,19 +174,8 @@ hr{
                     text-decoration: underline;
 
                 }
-
-
-
+                
 /* -----------------CONTACTO-------------------- */
-
-#section-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-left: 30px solid rgb(104, 104, 104);
-    border-right: 30px solid rgb(104, 104, 104);
-    padding: 10px
-}
 
 /* inputs style */
 input{
@@ -220,7 +210,7 @@ textarea{
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
+    -webkit-appearance: none; 
 }
 
 /* ----------------- SOBRE NOSOTROS------------------- */
@@ -284,27 +274,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 .product-buypage{
-    display: block;
-    margin: 0px auto;
+    margin-bottom: 30px;
     width: 80%;
-}
-
-.product-selected{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.shoe-selected{
-    width: auto;
-    margin-right: 50px;
-}
-
-.shoe-selected > img{
-    border: solid black 2px;
-}
-
-#product-main-image{
-    height: 500px;
 }
 
 .shoe-specs{
@@ -319,16 +290,15 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 400;
 }
 
-.shoe-models{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.shoe-models img{
-    height: 50px;
-}
+    #shoes-models img{
+        height: 50px;
+        border: solid 1px rgb(0, 0, 0);
+        border-radius: 3px;
+    }
+    
+    #shoes-models img:hover{
+        border
+    }
 
 .buy-buttons{
     margin-top: 15px;
