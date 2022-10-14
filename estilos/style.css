@@ -308,6 +308,18 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 @media all and (max-width: 420px) {
+
+    /* banner */
+    .banner-text{
+        font-size: 14px;
+    }
+
+
+
+    /* ----- */
+
+
+
     .footer-logo{
         display: flex;
         flex-direction: column;
@@ -329,9 +341,16 @@ input[type=number]::-webkit-outer-spin-button {
     /* about us */
 
     #aboutus-video iframe{
-        width: 350px;
+        width: 100%;
         height: 180px;
     }
+    
+    /* contact */
+    
+    #map iframe{
+        width: 100%;
+    }
+
     
     }
 
