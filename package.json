@@ -1,6 +1,12 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.1",
-    "node.js": "^0.0.1-security"
+    "node": "^18.10.0",
+    "node.js": "^0.0.1-security",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
   }
 }
